@@ -26,6 +26,9 @@
 		<link rel="shortcut icon" href="favicon.ico"/>
 
 		<style>
+			.navbar-fixed-top{
+				top: 30px
+			}
 			@media (min-width: 992px){
 				.promo-section .promo-section-img-left {
 					position: absolute;
@@ -41,12 +44,34 @@
 					left: 52.1%;
 				}
 			}
+			.callMe{
+				z-index: 10086;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				background-color: #ffc730;
+				height: 30px;
+				line-height: 30px
+			}
+			.callMe .phone{
+				height: 80%;
+				padding-left: 80px
+			}
+			.callMe .phone img,.callMe .phone span{
+				color: #fff
+			}
 		</style>
 	</head>
 	<!-- END HEAD -->
 
 	<!-- BODY -->
 	<body>
+		<div class="callMe">
+			<div class="phone">
+				<img style="height: 100%" src="./img/TEL.png" alt="">
+				<span>044-456-456</span>
+			</div>
+		</div>
 		<!--========== HEADER ==========-->
 		<header class="header navbar-fixed-top">
 			<!-- Navbar -->
@@ -88,7 +113,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item">
-					<img class="img-responsive" src="img/1920x1080/banner04.png" alt="Slider Image">
+					<img class="img-responsive" src="img/1920x1080/banner04.jpg" alt="Slider Image">
 				</div>
 			</div>
 		</div>
@@ -229,7 +254,6 @@
 		<script src="js/components/wow.min.js" type="text/javascript"></script>
 		<script src="js/components/swiper.min.js" type="text/javascript"></script>
 		<script src="js/components/masonry.min.js" type="text/javascript"></script>
-
 	</body>
 	<!-- END BODY -->
 </html>
