@@ -56,6 +56,23 @@
 				text-align: center;
 				font-weight: 600
 			}
+			.sidebar{
+				position: fixed;
+				top: 35%;
+				background: #fff;
+				z-index: 10086;
+				box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.3);;
+			}
+			.sidebar li{
+				width: 80px;
+				margin: 0 auto;
+				list-style:none;
+				text-align: center;
+				font-size: 26px;
+			}
+			.blue{
+				color: #14d2eb
+			}
 		</style>
 	</head>
 	<!-- END HEAD -->
@@ -101,6 +118,20 @@
 		</header>
 		<!--========== END HEADER ==========-->
 
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<ul style="width:99px;padding: 0">
+				<li class="blue" style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+				<li>M</li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+
 		<!--========== SLIDER ==========-->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<!-- Wrapper for slides -->
@@ -112,6 +143,7 @@
 		</div>
 		<!--========== SLIDER ==========-->
 
+		<!--========== PAGE LAYOUT ==========-->
 		<!-- Pricing -->
         <div class="bg-color-sky-light">
             <div class="content-lg container">
