@@ -26,6 +26,9 @@
 		<link rel="shortcut icon" href="favicon.ico"/>
 
 		<style>
+			.navbar-fixed-top{
+				top: 30px
+			}
 			@media (min-width: 992px){
 				.promo-section .promo-section-img-left {
 					position: absolute;
@@ -41,12 +44,27 @@
 					left: 52.1%;
 				}
 			}
+			.callMe{
+				z-index: 10086;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				background-color: #ffc730;
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+				text-align: center;
+				font-weight: 600
+			}
 		</style>
 	</head>
 	<!-- END HEAD -->
 
 	<!-- BODY -->
 	<body>
+		<div class="callMe">
+				TEL:-86-769-82199271
+		</div>
 		<!--========== HEADER ==========-->
 		<header class="header navbar-fixed-top">
 			<!-- Navbar -->
@@ -153,8 +171,12 @@
         </div>
         
         <div class="promo-section overflow-h" style="margin-top: 100px;margin-bottom: 100px">
-			<div class="promo-section-img-left" style="	width: 40%;margin-left: 150px;">
-				<img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
+			<div class="promo-section-img-left" style="	width: 65%;margin-left: 150px;">
+				<div class="clearfix">
+					<div class="promo-section-col">
+						<img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
+					</div>
+				</div>
 			</div>
 			<div class="promo-section-img-right" style="margin-right: 150px;">
 				<div class="clearfix">
@@ -225,7 +247,6 @@
 		<script src="js/components/wow.min.js" type="text/javascript"></script>
 		<script src="js/components/swiper.min.js" type="text/javascript"></script>
 		<script src="js/components/masonry.min.js" type="text/javascript"></script>
-
 	</body>
 	<!-- END BODY -->
 </html>
