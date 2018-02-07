@@ -57,6 +57,7 @@
 				font-weight: 600
 			}
 			.sidebar{
+				display: none;
 				position: fixed;
 				top: 35%;
 				background: #fff;
@@ -310,9 +311,11 @@
 			$(window).scroll(function () { 
 				// console.log($(window).scrollTop())
 				if ($(window).scrollTop()<1100) {
+					$(".sidebar").css("display", "none");
 					$(".sidebar li").removeClass("blue");
 				}
 				if ($(window).scrollTop()>1100) {
+					$(".sidebar").css("display", "block");
 					$(".sidebar li").removeClass("blue");
 					$(".sidebar li:eq(0)").addClass("blue")
 				}
