@@ -73,6 +73,19 @@
 			.blue{
 				color: #14d2eb
 			}
+			.header .navbar {
+				background: #fff;
+				border-bottom-color: #f0f0f0;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.header .nav-item-child {
+				color: #515769;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
 		</style>
 	</head>
 	<!-- END HEAD -->
@@ -281,15 +294,19 @@
 		<script src="js/components/masonry.min.js" type="text/javascript"></script>
 
 		<script>
+			$(".logo-wrap img:eq(0)").css("display", "none");
+			$(".logo-wrap img:eq(1)").css("display", "inline-block");
+			// mouse
 			$(".sidebar li").on({  
 				mouseover : function(){  
-					$(this).css("color","#14d2eb")  
+					$(this).addClass("blue")
 				} ,  
 				mouseout : function(){  
-					$(this).css("color","#515769")  
+					$(this).removeClass("blue"); 
 				}   
 			});
 
+			// floor
 			$(window).scroll(function () { 
 				// console.log($(window).scrollTop())
 				if ($(window).scrollTop()<1100) {
