@@ -116,9 +116,16 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse nav-collapse">
 						<div class="menu-container">
-							<ul class="navbar-nav navbar-nav-right">
+							<ul class="navbar-nav navbar-nav-right" style="height: 95px;">
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
+									<ul style="list-style:none;display: none">
+										<li>123</li>
+										<li>123</li>
+										<li>123</li>
+										<li>123</li>
+									</ul>
+								</li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">APPLICATION</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
@@ -305,6 +312,14 @@
 				} ,  
 				mouseout : function(){  
 					$(this).removeClass("blue"); 
+				}   
+			});
+			$("a.active").on({  
+				mouseover : function(){  
+					$(this).next("ul").css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).next("ul").css("display","none")
 				}   
 			});
 
