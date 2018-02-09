@@ -123,6 +123,10 @@
 			.drop_down .li {
 				border-bottom: 1px solid #b4b4b4;
 			}
+			@media (max-width: 767px) {
+			.sidebar{
+				display: none
+			}}
 		</style>
 	</head>
 	<!-- END HEAD -->
@@ -139,6 +143,10 @@
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="toggle-icon"></span>
+						</button>
 						<!-- Logo -->
 						<div class="logo">
 							<a class="logo-wrap" href="index.html">
@@ -372,8 +380,10 @@
 			});
 
 			// floor
-			$(window).scroll(function () { 
-				// console.log($(window).scrollTop())
+			$(window).scroll(function () {
+				if ($(window).width()<=767) {
+					return 666;
+				}
 				if ($(window).scrollTop()<1100) {
 					$(".sidebar").css("display", "none");
 					$(".sidebar li").removeClass("blue");
