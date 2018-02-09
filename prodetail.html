@@ -62,7 +62,25 @@
 				top: 35%;
 				background: #fff;
 				z-index: 10086;
-				box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.3);;
+				border: 1px solid #f0f0f0
+			}
+			.sidebar ul {
+				width:99px;
+				padding: 0
+			}
+			.sidebar .li {
+				border-bottom: 2px solid #f0f0f0;
+			}
+			.li.mouse {
+				display: none;
+				position: absolute;
+				top: 0;
+				background: #fff;
+				margin-left: 9.5px;
+				white-space:nowrap;
+				width: auto;
+				border: 1px solid #f0f0f0;
+				border-left: 0px solid #f0f0f0;
 			}
 			.sidebar li{
 				width: 80px;
@@ -102,7 +120,7 @@
 			.drop_down li {
 				font-size: 18px;
 			}
-			.li {
+			.drop_down .li {
 				border-bottom: 1px solid #b4b4b4;
 			}
 		</style>
@@ -160,13 +178,14 @@
 
 		<!-- Sidebar -->
 		<div class="sidebar">
-			<ul style="width:99px;padding: 0">
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
-				<li style="border-bottom: 2px solid #f0f0f0;">M</li>
+			<li class="li mouse">Machine Frame</li>
+			<ul>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
 				<li>M</li>
 			</ul>
 		</div>
@@ -327,10 +346,12 @@
 			// mouse
 			$(".sidebar li").on({  
 				mouseover : function(){  
-					$(this).addClass("blue")
+					$(this).addClass("blue");
+					$(".mouse").css("display", "block");
 				} ,  
 				mouseout : function(){  
 					$(this).removeClass("blue"); 
+					$(".mouse").css("display", "none");
 				}   
 			});
 			$("a.active").on({
@@ -339,6 +360,14 @@
 				} ,  
 				mouseout : function(){  
 					$(".drop_down").css("display","none")
+				}   
+			});
+			$(".drop_down").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
 				}   
 			});
 
@@ -351,12 +380,12 @@
 				}
 				if ($(window).scrollTop()>1100) {
 					$(".sidebar").css("display", "block");
-					$(".sidebar li").removeClass("blue");
-					$(".sidebar li:eq(0)").addClass("blue")
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(0)").addClass("blue")
 				}
 				if ($(window).scrollTop()>1670) {
-					$(".sidebar li").removeClass("blue");
-					$(".sidebar li:eq(1)").addClass("blue")
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(1)").addClass("blue")
 				}
 			});
 		</script>
