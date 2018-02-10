@@ -118,7 +118,7 @@
 				display: none;
 			}
 			.drop_down li {
-				font-size: 18px;
+				font-size: 13px;
 			}
 			.drop_down .li {
 				border-bottom: 1px solid #b4b4b4;
@@ -134,7 +134,7 @@
 	<!-- BODY -->
 	<body>
 		<div class="callMe">
-				TEL:-86-769-82199271
+			TEL:-86-769-82199271 &nbsp;&nbsp;&nbsp;&nbsp; Email：grace@alhctech.com
 		</div>
 		<!--========== HEADER ==========-->
 		<header class="header navbar-fixed-top">
@@ -376,6 +376,14 @@
 				} ,  
 				mouseout : function(){  
 					$(this).css("display","none")
+				}   
+			});
+			$(".drop_down li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue");
 				}   
 			});
 
