@@ -24,25 +24,37 @@
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="favicon.ico"/>
+
 		<style>
+			.navbar-fixed-top{
+				top: 30px
+			}
 			@media (min-width: 992px){
-				/* .promo-section .promo-section-img-right {
-					position: absolute;
-					top: 0;
-					left: 52.1%;
-				}
 				.promo-section .promo-section-img-left {
 					position: absolute;
 					top: 0;
 					right: initial;
-				} */
-				.promo-section .promo-section-col {
-					width: 47%;
+				}
+				.promo-section .promo-section-img-right {
+					position: absolute;
+					top: 0;
+					left: 52.1%;
+				}
+				.text_left {
+					width: 65%;
+					margin-left: 150px;
+				}
+				.img_right {
+					margin-right: 150px;
+				}
+				.img_left {
+					width: 65%;margin-left: 150px;
+				}
+				.text_right {
+					margin-right: 150px;
 				}
 			}
-			.navbar-fixed-top{
-				top: 30px
-			}
+
 			.callMe{
 				z-index: 10086;
 				position: fixed;
@@ -55,8 +67,58 @@
 				text-align: center;
 				font-weight: 600
 			}
+			.sidebar{
+				display: none;
+				position: fixed;
+				top: 35%;
+				background: #fff;
+				z-index: 10086;
+				border: 1px solid #f0f0f0
+			}
+			.sidebar ul {
+				width:99px;
+				padding: 0
+			}
+			.sidebar .li {
+				border-bottom: 2px solid #f0f0f0;
+			}
+			.li.mouse {
+				display: none;
+				position: absolute;
+				top: 0;
+				background: #fff;
+				margin-left: 9.5px;
+				white-space:nowrap;
+				width: auto;
+				border: 1px solid #f0f0f0;
+				border-left: 0px solid #f0f0f0;
+			}
+			.sidebar li{
+				width: 80px;
+				margin: 0 auto;
+				list-style:none;
+				text-align: center;
+				font-size: 26px;
+			}
+			.blue{
+				color: #14d2eb
+			}
+			.header .navbar {
+				background: #fff;
+				border-bottom-color: #f0f0f0;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.header .nav-item-child {
+				color: #515769;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
 			.drop_down{
 				position: absolute;
+				background: #fff;
 				list-style:none;
 				padding: 0 20px;
 				text-align: center;
@@ -67,14 +129,21 @@
 				display: none;
 			}
 			.drop_down li {
-				color: #fff;
 				font-size: 13px;
 			}
-			.drop_down .li{
+			.drop_down .li {
 				border-bottom: 1px solid #b4b4b4;
 			}
-			.blue{
-				color: #14d2eb!important
+			@media (max-width: 943px) {
+				.sidebar{
+					display: none
+				}
+				.text_left,.text_right {
+					padding-right: 15px;
+					padding-left: 15px;
+					margin-right: auto;
+					margin-left: auto;
+				}
 			}
 		</style>
 	</head>
@@ -88,7 +157,7 @@
 		<!--========== HEADER ==========-->
 		<header class="header navbar-fixed-top">
 			<!-- Navbar -->
-			<nav id="bs-navbar" class="navbar" role="navigation">
+			<nav class="navbar" role="navigation">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="menu-container">
@@ -109,9 +178,9 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse nav-collapse">
 						<div class="menu-container">
-							<ul class="navbar-nav navbar-nav-right">
-								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.html">Home</a></li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">PRODUCTS</a>
+							<ul class="navbar-nav navbar-nav-right" style="height: 95px;">
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
 									<ul class="drop_down">
 										<li class="li">UV Flatbed printer</li>
 										<li class="li">UV Flatbed printer</li>
@@ -135,118 +204,53 @@
 
 		<!--========== SLIDER ==========-->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<div class="container">
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				</ol>
-			</div>
-
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img class="img-responsive" src="img/1920x1080/banner01.jpg" alt="Slider Image">
-					<div class="container">
-						<div class="carousel-centered">
-							<div class="margin-b-40">
-								<h1 class="carousel-title">ALHC-2513</h1>
-								<p>Computer system requirement: <br> CPU: I3 or I5, Internal memory: 8 G Window 7 , 64bit</p>
-							</div>
-							<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
-						</div>
-					</div>
-				</div>
 				<div class="item">
-					<img class="img-responsive" src="img/1920x1080/banner02.jpg" alt="Slider Image">
-					<div class="container">
-						<div class="carousel-centered">
-							<div class="margin-b-40">
-									<h1 class="carousel-title">ALHC-2513</h1>
-									<p>Computer system requirement: <br> CPU: I3 or I5, Internal memory: 8 G Window 7 , 64bit</p>
-							</div>
-							<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
-						</div>
-					</div>
+					<img class="img-responsive" src="img/1920x1080/banner04.jpg" alt="Slider Image">
 				</div>
 			</div>
 		</div>
 		<!--========== SLIDER ==========-->
 
-		<!-- Latest Products -->
-		<div class="content-lg container">
-			<div class="row margin-b-40">
-				<div class="col-sm-6">
-					<h2>Latest Products</h2>
-					<p>Introduce a section of the latest product in English.Introduce a section of the latest product in English</p>
-				</div>
-			</div>
-			<!--// end row -->
-
-			<div class="row">
-				<!-- Latest Products -->
-				<div class="col-sm-4 sm-margin-b-50">
-					<div class="margin-b-20">
-						<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-							<img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
-						</div>
-					</div>
-					<h4><a href="#">ALHC-1800UV RTR</a> <span class="text-uppercase margin-l-20">UV roll to roll printer</span></h4>
-					<p>Introduce a section of the latest product in English.Introduce a section of the latest product in English</p>
-					<a class="link" href="#">Read More</a>
-				</div>
-				<!-- End Latest Products -->
-
-				<!-- Latest Products -->
-				<div class="col-sm-4 sm-margin-b-50">
-					<div class="margin-b-20">
-						<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-							<img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
-						</div>
-					</div>
-					<h4><a href="#">ALHC-1800UV RTR</a> <span class="text-uppercase margin-l-20">UV roll to roll printer</span></h4>
-					<p>Introduce a section of the latest product in English.Introduce a section of the latest product in English</p>
-					<a class="link" href="#">Read More</a>
-				</div>
-				<!-- End Latest Products -->
-
-				<!-- Latest Products -->
-				<div class="col-sm-4 sm-margin-b-50">
-					<div class="margin-b-20">
-						<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-							<img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
-						</div>
-					</div>
-					<h4><a href="#">ALHC-1800UV RTR</a> <span class="text-uppercase margin-l-20">UV roll to roll printer</span></h4>
-					<p>Introduce a section of the latest product in English.Introduce a section of the latest product in English</p>
-					<a class="link" href="#">Read More</a>
-				</div>
-				<!-- End Latest Products -->
-			</div>
-			<!--// end row -->
-		</div>
-		<!-- End Latest Products -->
-
-		<!-- Promo Section -->
-		<div class="promo-section overflow-h bg-color-sky-light" style="margin-bottom: 100px">
-			<div class="container">
-				<div class="clearfix">
-					<div class="ver-center">
-						<div class="ver-center-aligned">
-							<div class="promo-section-col">
-								<h2>ABOUT US</h2>
-								<p>Introduce a section of the latest product in English.Introduce a section of the latest product in EnglishIntroduce a section of the latest product in English.Introduce a section of the latest product in EnglishIntroduce a section of the latest product in English</p>
-								<p>Introduce a section of the latest product in English.Introduce a section of the latest product in EnglishIntroduce a section of the latest product in English。</p>
+		<!--========== PAGE LAYOUT ==========-->
+			<!-- Pricing -->
+			<div class="bg-color-sky-light">
+				<div class="content-lg container">
+					<div class="row row-space-1">
+						<div class="col-sm-12 sm-margin-b-2">
+							<!-- Pricing -->
+							<div class="pricing">
+								<div class="margin-b-30">
+									<h3>ALHC-6090UV</h3>
+								</div>
+								<ul class="list-unstyled pricing-list margin-b-50">
+									<li class="pricing-list-item">Max print size: 600x900mm</li>
+									<li class="pricing-list-item">Print head: 4pcs Toshiba CE4M industrial print heads</li>
+                                    <li class="pricing-list-item">Colors: C、M、Y、K、Lc、LM + W, one head with 2 colors</li>
+                                    <li class="pricing-list-item">Curing system: Led Lamp</li>
+									<li class="pricing-list-item">Print speed: 6.5 sq.m/hr，600x900 DPI  bi-direction</li>
+									<li class="pricing-list-item">Max resolution: 600x2400 DPI</li>
+									<li class="pricing-list-item">RIP software: UnitedFancy </li>
+									<li class="pricing-list-item">Max print height: 70mm</li>
+									<li class="pricing-list-item">Power requirement: AC220V / 10A, 1000W</li>
+									<li class="pricing-list-item">Interface: USB2.0</li>
+									<li class="pricing-list-item">Operation System: Windows 7/8 64 bit</li>
+									<li class="pricing-list-item">Machine net weight: 130KG</li>
+									<li class="pricing-list-item">Printer size: 1615x1552x530  mm</li>
+									<li class="pricing-list-item">Packing size: 1670x1770x720  mm</li>
+									<li class="pricing-list-item">Environment: Separate workroom in good cleaning and ventilated condition, avoid direct sunlight
+                                            Temperature: 18 ºC – 30 ºC (64-86 ºF) 
+                                            Constant Humidity: 30%-70%.</li>
+								</ul>
 							</div>
+							<!-- End Pricing -->
 						</div>
 					</div>
+					<!--// end row -->
 				</div>
 			</div>
-			<div class="promo-section-img-right">
-				<img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
-			</div>
-		</div>
-		<!-- End Promo Section -->
+			<!-- End Pricing -->
 		<!--========== END PAGE LAYOUT ==========-->
 
 		<!--========== FOOTER ==========-->
@@ -303,8 +307,21 @@
 		<script src="js/components/masonry.min.js" type="text/javascript"></script>
 
 		<script>
-			// 下来菜单
-			$("a.active").parent().next().children("a").on({  
+			$(".logo-wrap img:eq(0)").css("display", "none");
+			$(".logo-wrap img:eq(1)").css("display", "inline-block");
+			
+			// mouse
+			$(".sidebar li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+					$(".mouse").css("display", "block");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue"); 
+					$(".mouse").css("display", "none");
+				}   
+			});
+			$("a.active").on({
 				mouseover : function(){  
 					$(".drop_down").css("display","block")
 				} ,  
@@ -320,7 +337,6 @@
 					$(this).css("display","none")
 				}   
 			});
-
 			$(".drop_down li").on({  
 				mouseover : function(){  
 					$(this).addClass("blue");
@@ -330,15 +346,23 @@
 				}   
 			});
 
-			$(window).scroll(function () { 
-				if ($(window).scrollTop()>0) {
-					$(".drop_down").css("background", "#fff");
-					$(".li").css("color", "#b4b4b4");
-					$(".drop_down li:last").css("color", "#b4b4b4");
-				} else if ($(window).scrollTop()<=0) {
-					$(".drop_down").css("background", "none");
-					$(".li").css("color", "#fff");
-					$(".drop_down li:last").css("color", "#fff");
+			// floor
+			$(window).scroll(function () {
+				if ($(window).width()<=767) {
+					return 666;
+				}
+				if ($(window).scrollTop()<1100) {
+					$(".sidebar").css("display", "none");
+					$(".sidebar li").removeClass("blue");
+				}
+				if ($(window).scrollTop()>1100) {
+					$(".sidebar").css("display", "block");
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(0)").addClass("blue")
+				}
+				if ($(window).scrollTop()>1670) {
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(1)").addClass("blue")
 				}
 			});
 		</script>

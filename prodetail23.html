@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+	<!-- BEGIN HEAD -->
+	<head>
+		<meta charset="utf-8"/>
+		<title>深圳市安蓝合创数码科技有限公司</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="" name="description"/>
+		<meta content="" name="author"/>
+
+		<!-- GLOBAL MANDATORY STYLES -->
+		<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+		<link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- PAGE LEVEL PLUGIN STYLES -->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- THEME STYLES -->
+		<link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico"/>
+
+		<style>
+			.navbar-fixed-top{
+				top: 30px
+			}
+			@media (min-width: 992px){
+				.promo-section .promo-section-img-left {
+					position: absolute;
+					top: 0;
+					right: initial;
+				}
+				.promo-section .promo-section-img-right {
+					position: absolute;
+					top: 0;
+					left: 52.1%;
+				}
+				.text_left {
+					width: 65%;
+					margin-left: 150px;
+				}
+				.img_right {
+					margin-right: 150px;
+				}
+				.img_left {
+					width: 65%;margin-left: 150px;
+				}
+				.text_right {
+					margin-right: 150px;
+				}
+			}
+			/* .diff:before {
+				background: #eb1414;
+			} */
+			.pricing .diff:before {
+				background: #eb1414;
+			}
+			.callMe{
+				z-index: 10086;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				background-color: #ffc730;
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+				text-align: center;
+				font-weight: 600
+			}
+			.sidebar{
+				display: none;
+				position: fixed;
+				top: 35%;
+				background: #fff;
+				z-index: 10086;
+				border: 1px solid #f0f0f0
+			}
+			.sidebar ul {
+				width:99px;
+				padding: 0
+			}
+			.sidebar .li {
+				border-bottom: 2px solid #f0f0f0;
+			}
+			.li.mouse {
+				display: none;
+				position: absolute;
+				top: 0;
+				background: #fff;
+				margin-left: 9.5px;
+				white-space:nowrap;
+				width: auto;
+				border: 1px solid #f0f0f0;
+				border-left: 0px solid #f0f0f0;
+			}
+			.sidebar li{
+				width: 80px;
+				margin: 0 auto;
+				list-style:none;
+				text-align: center;
+				font-size: 26px;
+			}
+			.blue{
+				color: #14d2eb
+			}
+			.header .navbar {
+				background: #fff;
+				border-bottom-color: #f0f0f0;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.header .nav-item-child {
+				color: #515769;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.drop_down{
+				position: absolute;
+				background: #fff;
+				list-style:none;
+				padding: 0 20px;
+				text-align: center;
+				border: solid 2px #b4b4b4;
+				border-top: solid 2px #14d2eb;
+				white-space:nowrap;
+				line-height: 40px;
+				display: none;
+			}
+			.drop_down li {
+				font-size: 13px;
+			}
+			.drop_down .li {
+				border-bottom: 1px solid #b4b4b4;
+			}
+			@media (max-width: 943px) {
+				.sidebar{
+					display: none
+				}
+				.text_left,.text_right {
+					padding-right: 15px;
+					padding-left: 15px;
+					margin-right: auto;
+					margin-left: auto;
+				}
+			}
+		</style>
+	</head>
+	<!-- END HEAD -->
+
+	<!-- BODY -->
+	<body>
+		<div class="callMe">
+			TEL:-86-769-82199271 &nbsp;&nbsp;&nbsp;&nbsp; Email：grace@alhctech.com
+		</div>
+		<!--========== HEADER ==========-->
+		<header class="header navbar-fixed-top">
+			<!-- Navbar -->
+			<nav class="navbar" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="toggle-icon"></span>
+						</button>
+						<!-- Logo -->
+						<div class="logo">
+							<a class="logo-wrap" href="index.html">
+								<img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
+								<img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+							</a>
+						</div>
+						<!-- End Logo -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-collapse">
+						<div class="menu-container">
+							<ul class="navbar-nav navbar-nav-right" style="height: 95px;">
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
+									<ul class="drop_down">
+										<li class="li">UV Flatbed printer</li>
+										<li class="li">UV Flatbed printer</li>
+										<li class="li" style="line-height: 27px;padding: 5px 0;">High speed Industrial <br> eco-solvent printer</li>
+										<li class="li">Small desktop printer</li>
+										<li>Digital printers ink</li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">APPLICATION</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End Navbar Collapse -->
+				</div>
+			</nav>
+			<!-- Navbar -->
+		</header>
+		<!--========== END HEADER ==========-->
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<li class="li mouse">Machine Frame</li>
+			<ul>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li class="li">M</li>
+				<li>M</li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+
+		<!--========== SLIDER ==========-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item">
+					<img class="img-responsive" src="img/1920x1080/banner04.jpg" alt="Slider Image">
+				</div>
+			</div>
+		</div>
+		<!--========== SLIDER ==========-->
+
+		<!--========== PAGE LAYOUT ==========-->
+			<!-- Pricing -->
+			<div class="bg-color-sky-light">
+				<div class="content-lg container">
+					<div class="row row-space-1">
+						<div class="col-sm-12 sm-margin-b-2">
+							<!-- Pricing -->
+							<div class="pricing">
+								<div class="margin-b-30">
+									<h3>ALHC-2513UV</h3>
+								</div>
+								<ul class="list-unstyled pricing-list margin-b-50">
+									<li class="pricing-list-item">Print size: 2500mmX1300mm</li>
+									<li class="pricing-list-item">Print Head: TOSHIBA CE4M</li>
+									<li class="pricing-list-item">Print Head Quantity: 4～10 PCS</li>
+									<li class="pricing-list-item">Print Color: C、M、Y、K、LC、LM、W、V</li>
+									<li class="pricing-list-item">Print Height: 0 to 80mm </li>
+									<li class="pricing-list-item">Curing System: Imported LED UV lamp</li>
+									<li class="pricing-list-item">Image Format: TIFF、BMP、EPS、JPEG</li>
+									<li class="pricing-list-item">Cleaning system: Auto Positive Pressure Cleaning</li>
+									<li class="pricing-list-item">Speed-Draft mode: 25 sqm/h</li>
+									<li class="pricing-list-item">Speed-Production Mode: 17 sqm/h</li>
+									<li class="pricing-list-item">Speed-High Resolution Mode: 12 sqm/h</li>
+									<li class="pricing-list-item">Interface: USB3.0</li>
+									<li class="pricing-list-item">RIP software: PHOTOPRINT,ULTRAPRINT</li>
+									<li class="pricing-list-item">Operation system: Windows7_X64</li>
+									<li class="pricing-list-item">Power Requirement: AC220 P2500</li>
+									<li class="pricing-list-item">Temperature/Humidity: Temperature：20-30℃  Humidity： 40%～60%</li>
+									<li class="pricing-list-item">Printer size: 4333mm＊2088mm＊1300mm</li>
+									<li class="pricing-list-item">Certification: CE, SGS, RoHS </li>
+									<li class="pricing-list-item">Computer system requirement: CPU: I3 or I5, Internal memory: 8 G Window 7 , 64bit</li>
+								</ul>
+							</div>
+							<!-- End Pricing -->
+						</div>
+					</div>
+					<!--// end row -->
+				</div>
+			</div>
+			<!-- End Pricing -->
+
+			<!-- Testimonials -->
+			<div class="content-lg container" >
+				<div class="row">
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>1.Toshiba CE4 print heads</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Equipped with Toshiba CE4 print heads, featuring 8 levels grey scale, mini 5pl ink drop size, with a high resolution. 300 billion accuration s’ per nozzles.
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>2.LED lamp (UV lamp as option)</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Using water cooling LED lamp system, for fast production and good curing effect.
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>3.Auto height detection system</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Automatically detects height of media up to 80mm thickness and calibrates print heads distance for variable dot placement. (300mm height is also available).
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>4.Filters for flying ink</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Filters between carriage and LED lamp, absorb the waste flying ink and make sure print quality. 
+							</div>
+						</blockquote>
+					</div>    
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>5.Emergency stop switches</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Stop operation from any corner when the printer is in emergency.
+							</div>
+						</blockquote>
+					</div>   
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>6.Anti-collision system</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Print head Anti-collision System, prevent print head damaging from accidents caused by human error or material deformation. 
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>7.Vacuum zone</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Three strong vacuum zone for flatbed table, eliminates the need for manually zoning the table with scrap material, allowing for easy setup of small batch printing.
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>8.Static suppression</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Static suppression kit that eliminates static on the media.
+							</div>
+						</blockquote>
+					</div>
+					<div class="col-sm-12">
+						<blockquote style="border-left: 10px solid #17bed2;background-color: #fafafa">
+							<h4>9.Full machine with 3pcs PCB board only</h4>
+							<div class="margin-b-20" style="font-size: 17px;font-weight: 400;color: #a6a7aa;border-left: none;margin-left: 20px;">
+									Full machine with 3pcs PCB board for controlling, easily maintenance. 
+							</div>
+						</blockquote>
+					</div>
+				</div>
+				<!--// end row -->
+			</div>
+			<!-- End Testimonials -->
+		<!--========== END PAGE LAYOUT ==========-->
+
+		<!--========== FOOTER ==========-->
+		<footer class="footer">
+			<!-- Copyright -->
+			<div class="content container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<span style="color: #fff;font-size: 13px">HOME</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">PRODUCTS</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">APPLICATION</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">TECHNICAL</span>
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">ABOUT</span>
+					</div>
+					<div class="col-xs-12 text-center" style="margin-top: 60px">
+						<img src="img/twitter.png" alt="">
+						<img src="img/Facebook.png" alt="" style="margin-left: 60px;">
+						<img src="img/youtube.png" alt="" style="margin-left: 60px">
+						<img src="img/Instagram.png" alt="" style="margin-left: 60px">
+					</div>
+				</div>
+				<!--// end row -->
+			</div>
+
+			<div class="text-center" style="color: #fff;font-size: 18px;border-top: 2px solid #fff;padding-top: 30px;padding-bottom: 30px">
+					© ALHC, Inc. All rights reserved.
+			</div>
+			<!-- End Copyright -->
+		</footer>
+		<!--========== END FOOTER ==========-->
+
+		<!-- Back To Top -->
+		<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+		<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+		<!-- CORE PLUGINS -->
+		<script src="vendor/jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- PAGE LEVEL PLUGINS -->
+		<script src="vendor/jquery.easing.js" type="text/javascript"></script>
+		<script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+		<script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+		<script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+		<script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<script src="js/layout.min.js" type="text/javascript"></script>
+		<script src="js/components/wow.min.js" type="text/javascript"></script>
+		<script src="js/components/swiper.min.js" type="text/javascript"></script>
+		<script src="js/components/masonry.min.js" type="text/javascript"></script>
+
+		<script>
+			$(".logo-wrap img:eq(0)").css("display", "none");
+			$(".logo-wrap img:eq(1)").css("display", "inline-block");
+			
+			// mouse
+			$(".sidebar li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+					$(".mouse").css("display", "block");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue"); 
+					$(".mouse").css("display", "none");
+				}   
+			});
+			$("a.active").on({
+				mouseover : function(){  
+					$(".drop_down").css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(".drop_down").css("display","none")
+				}   
+			});
+			$(".drop_down").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
+				}   
+			});
+			$(".drop_down li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue");
+				}   
+			});
+
+			// floor
+			$(window).scroll(function () {
+				if ($(window).width()<=767) {
+					return 666;
+				}
+				if ($(window).scrollTop()<1100) {
+					$(".sidebar").css("display", "none");
+					$(".sidebar li").removeClass("blue");
+				}
+				if ($(window).scrollTop()>1100) {
+					$(".sidebar").css("display", "block");
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(0)").addClass("blue")
+				}
+				if ($(window).scrollTop()>1670) {
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(1)").addClass("blue")
+				}
+			});
+		</script>
+	</body>
+	<!-- END BODY -->
+</html>
