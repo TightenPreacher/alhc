@@ -178,9 +178,9 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse nav-collapse">
 						<div class="menu-container">
-							<ul class="navbar-nav navbar-nav-right" style="height: 95px;">
+							<ul class="navbar-nav navbar-nav-right">
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
+								<li class="nav-item" style="width: 103px;"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
 									<ul class="drop_down">
 										<li class="li">UV Flatbed printer</li>
 										<li class="li">UV Flatbed printer</li>
@@ -189,8 +189,8 @@
 										<li>Digital printers ink</li>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">APPLICATION</a></li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
+								<!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li> -->
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
 							</ul>
 						</div>
@@ -207,7 +207,7 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item">
-					<img class="img-responsive" src="img/1920x1080/banner04.jpg" alt="Slider Image">
+					<img class="img-responsive" src="img/PRODUCTS/ALHC-6090UV.jpg" alt="Slider Image">
 				</div>
 			</div>
 		</div>
@@ -311,32 +311,6 @@
 			$(".logo-wrap img:eq(1)").css("display", "inline-block");
 			
 			// mouse
-			$(".sidebar li").on({  
-				mouseover : function(){  
-					$(this).addClass("blue");
-					$(".mouse").css("display", "block");
-				} ,  
-				mouseout : function(){  
-					$(this).removeClass("blue"); 
-					$(".mouse").css("display", "none");
-				}   
-			});
-			$("a.active").on({
-				mouseover : function(){  
-					$(".drop_down").css("display","block")
-				} ,  
-				mouseout : function(){  
-					$(".drop_down").css("display","none")
-				}   
-			});
-			$(".drop_down").on({  
-				mouseover : function(){  
-					$(this).css("display","block")
-				} ,  
-				mouseout : function(){  
-					$(this).css("display","none")
-				}   
-			});
 			$(".drop_down li").on({  
 				mouseover : function(){  
 					$(this).addClass("blue");
@@ -365,6 +339,38 @@
 					$(".sidebar ul li:eq(1)").addClass("blue")
 				}
 			});
+
+			// width
+			function widthChange() {
+				if ($("body").width()<970) {
+					$(".drop_down").css("display", "none");
+					$("#carousel-example-generic").css("margin-top", "127px");
+					$(".carousel-title").next().css("display", "none");
+					$("a.text-uppercase").css("display", "none");
+				} else {
+					$(".drop_down").css("display", "initial");
+					$("#carousel-example-generic").css("margin-top", "0px");
+					$(".carousel-title").next().css("display", "initial");
+					$("a.text-uppercase").css("display", "initial");
+					// mouse
+					$("a.active").on({
+						mouseover : function(){  
+							$(".drop_down").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down").css("display","none")
+						}   
+					});
+				}	
+			}
+
+			widthChange();
+			if ($("body").width()>=970) {
+				$(".drop_down").css("display", "none");
+			}
+			window.onresize = function(){
+				widthChange()			
+			};
 		</script>
 	</body>
 	<!-- END BODY -->
