@@ -108,8 +108,8 @@
 										<li>Digital printers ink</li>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">APPLICATION</a></li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
+								<!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li> -->
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
 							</ul>
 						</div>
@@ -459,14 +459,6 @@
 
 		<script>
 			// 下来菜单
-			$("a.active").on({  
-				mouseover : function(){  
-					$(".drop_down").css("display","block")
-				} ,  
-				mouseout : function(){  
-					$(".drop_down").css("display","none")
-				}   
-			});
 			$(".drop_down").on({  
 				mouseover : function(){  
 					$(this).css("display","block")
@@ -496,6 +488,38 @@
 					$(".drop_down li:last").css("color", "#fff");
 				}
 			});
+
+			// width
+			function widthChange() {
+				if ($("body").width()<970) {
+					$(".drop_down").css("display", "none");
+					$("#carousel-example-generic").css("margin-top", "127px");
+					$(".carousel-title").next().css("display", "none");
+					$("a.text-uppercase").css("display", "none");
+				} else {
+					$(".drop_down").css("display", "initial");
+					$("#carousel-example-generic").css("margin-top", "0px");
+					$(".carousel-title").next().css("display", "initial");
+					$("a.text-uppercase").css("display", "initial");
+					// mouse
+					$("a.active").on({
+						mouseover : function(){  
+							$(".drop_down").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down").css("display","none")
+						}   
+					});
+				}	
+			}
+
+			widthChange();
+			if ($("body").width()>=970) {
+				$(".drop_down").css("display", "none");
+			}
+			window.onresize = function(){
+				widthChange()			
+			};
 		</script>
 	</body>
 	<!-- END BODY -->

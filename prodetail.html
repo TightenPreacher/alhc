@@ -40,7 +40,6 @@
 					top: 0;
 					left: 52.1%;
 				}
-				
 			}
 			.img_right{
 				width: 100%
@@ -190,7 +189,7 @@
 										<li>Digital printers ink</li>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">APPLICATION</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
 							</ul>
@@ -387,25 +386,6 @@
 			$(".logo-wrap img:eq(0)").css("display", "none");
 			$(".logo-wrap img:eq(1)").css("display", "inline-block");
 			
-			// mouse
-			$(".sidebar li").on({  
-				mouseover : function(){  
-					$(this).addClass("blue");
-					$(".mouse").css("display", "block");
-				} ,  
-				mouseout : function(){  
-					$(this).removeClass("blue"); 
-					$(".mouse").css("display", "none");
-				}   
-			});
-			$("a.active").on({
-				mouseover : function(){  
-					$(".drop_down").css("display","block")
-				} ,  
-				mouseout : function(){  
-					$(".drop_down").css("display","none")
-				}   
-			});
 			$(".drop_down").on({  
 				mouseover : function(){  
 					$(this).css("display","block")
@@ -451,12 +431,41 @@
 
 					$(".text_right").removeClass("text_right1");
 					$(".text_right").addClass("text_right2");
+
+					$(".drop_down").css("display", "none");
+					$("#carousel-example-generic").css("margin-top", "127px");
+					$(".carousel-title").next().css("display", "none");
+					$("a.text-uppercase").css("display", "none");
 				} else {
 					$(".text_left").removeClass("text_left2");
 					$(".text_left").addClass("text_left1");
 
 					$(".text_right").removeClass("text_right2");
 					$(".text_right").addClass("text_right1");
+
+					$(".drop_down").css("display", "initial");
+					$("#carousel-example-generic").css("margin-top", "0px");
+					$(".carousel-title").next().css("display", "initial");
+					$("a.text-uppercase").css("display", "initial");
+					// mouse
+					$(".sidebar li").on({  
+						mouseover : function(){  
+							$(this).addClass("blue");
+							$(".mouse").css("display", "block");
+						} ,  
+						mouseout : function(){  
+							$(this).removeClass("blue"); 
+							$(".mouse").css("display", "none");
+						}   
+					});
+					$("a.active").on({
+						mouseover : function(){  
+							$(".drop_down").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down").css("display","none")
+						}   
+					});
 				}	
 			}
 
