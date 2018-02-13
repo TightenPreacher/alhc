@@ -1,0 +1,639 @@
++<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+	<!-- BEGIN HEAD -->
+	<head>
+		<meta charset="utf-8"/>
+		<title>深圳市安蓝合创数码科技有限公司</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta content="" name="description"/>
+		<meta content="" name="author"/>
+
+		<!-- GLOBAL MANDATORY STYLES -->
+		<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+		<link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- PAGE LEVEL PLUGIN STYLES -->
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- THEME STYLES -->
+		<link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico"/>
+
+		<style>
+			.navbar-fixed-top{
+				top: 30px
+			}
+			@media (min-width: 970px){
+				.promo-section .promo-section-img-left {
+					position: absolute;
+					top: 0;
+					right: initial;
+				}
+				.promo-section .promo-section-img-right {
+					position: absolute;
+					top: 0;
+					left: 52.1%;
+				}
+			}
+			.pricing .diff:before {
+				background: #eb1414;
+			}
+			.img_right{
+				width: 100%
+			}
+			.text_left,.text_right {
+				padding: 0 7%!important;
+			}
+			.text_left1 {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			.text_left2,.text_right2 {
+				margin: 30px 0!important;
+				position: initial;
+				top: initial;
+				transform: initial;
+			}
+			.text_right1 {
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			
+			.callMe{
+				z-index: 10086;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				background-color: #ffc730;
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+				text-align: center;
+				font-weight: 600
+			}
+			.sidebar{
+				display: none;
+				position: fixed;
+				top: 35%;
+				background: #fff;
+				z-index: 10086;
+				border: 1px solid #f0f0f0
+			}
+			.sidebar ul {
+				width:99px;
+				padding: 0
+			}
+			.sidebar .li {
+				border-bottom: 2px solid #f0f0f0;
+			}
+			.li.mouse {
+				display: none;
+				position: absolute;
+				top: 0;
+				background: #fff;
+				margin-left: 9.5px;
+				white-space:nowrap;
+				width: auto;
+				border: 1px solid #f0f0f0;
+				border-left: 0px solid #f0f0f0;
+			}
+			.sidebar li{
+				width: 80px;
+				margin: 0 auto;
+				list-style:none;
+				text-align: center;
+				font-size: 26px;
+			}
+			.blue{
+				color: #14d2eb
+			}
+			.header .navbar {
+				background: #fff;
+				border-bottom-color: #f0f0f0;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.header .nav-item-child {
+				color: #515769;
+				transition-duration: .3s;
+				transition-property: all;
+				transition-timing-function: cubic-bezier(.7,1,.7,1);
+			}
+			.drop_down{
+				position: absolute;
+				background: #fff;
+				list-style:none;
+				padding: 0 20px;
+				text-align: center;
+				border: solid 2px #b4b4b4;
+				border-top: solid 2px #14d2eb;
+				white-space:nowrap;
+				line-height: 40px;
+				display: none;
+			}
+			.drop_down li {
+				font-size: 13px;
+			}
+			.drop_down .li {
+				border-bottom: 1px solid #b4b4b4;
+			}
+			
+		</style>
+	</head>
+	<!-- END HEAD -->
+
+	<!-- BODY -->
+	<body>
+		<div class="callMe">
+			TEL:-86-769-82199271 &nbsp;&nbsp;&nbsp;&nbsp; Email：grace@alhctech.com
+		</div>
+		<!--========== HEADER ==========-->
+		<header class="header navbar-fixed-top">
+			<!-- Navbar -->
+			<nav class="navbar" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="menu-container">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="toggle-icon"></span>
+						</button>
+						<!-- Logo -->
+						<div class="logo">
+							<a class="logo-wrap" href="index.html">
+								<img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
+								<img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+							</a>
+						</div>
+						<!-- End Logo -->
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-collapse">
+						<div class="menu-container">
+							<ul class="navbar-nav navbar-nav-right">
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
+								<li class="nav-item" style="width: 103px;"><a class="nav-item-child nav-item-hover active" href="products.html">PRODUCTS</a>
+									<ul class="drop_down">
+										<li class="li">UV Flatbed printer</li>
+										<li class="li">UV Flatbed printer</li>
+										<li class="li" style="line-height: 27px;padding: 5px 0;">High speed Industrial <br> eco-solvent printer</li>
+										<li class="li">Small desktop printer</li>
+										<li>Digital printers ink</li>
+									</ul>
+								</li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
+								<!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">TECHNICAL</a></li> -->
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End Navbar Collapse -->
+				</div>
+			</nav>
+			<!-- Navbar -->
+		</header>
+		<!--========== END HEADER ==========-->
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<li class="li mouse">Machine Frame</li>
+			<ul>
+				<li class="li">T</li>
+				<li class="li">P</li>
+				<li class="li">U</li>
+				<li class="li">M</li>
+				<li class="li">I</li>
+				<li class="li">S</li>
+				<li class="li">C</li>
+				<li class="li">4</li>
+				<li>D</li>
+			</ul>
+		</div>
+		<!-- End Sidebar -->
+
+		<!--========== SLIDER ==========-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img class="img-responsive" src="img/PRODUCTS/ALHC-1800-ECO.jpg" alt="Slider Image">
+				</div>
+			</div>
+		</div>
+		<!--========== SLIDER ==========-->
+
+		<!--========== PAGE LAYOUT ==========-->
+			<!-- Pricing -->
+			<div class="bg-color-sky-light">
+				<div class="content-lg container">
+					<div class="row row-space-1">
+						<div class="col-sm-6 sm-margin-b-2">
+							<!-- Pricing -->
+							<div class="pricing">
+								<div class="margin-b-30">
+									<h3>ALHC-1800ECO - 300*1200dpi</h3>
+								</div>
+								<ul class="list-unstyled pricing-list margin-b-50">
+									<li class="pricing-list-item">Print Head: Industrial Toshiba CE4M</li>
+									<li class="pricing-list-item">Number of print heads: 8pcs</li>
+									<li class="pricing-list-item diff">Resolution: 300*1200dpi</li>
+									<li class="pricing-list-item">Print mode: Bi-direction</li>
+									<li class="pricing-list-item diff">Speed: 4pass - 61㎡/h</li>
+									<li class="pricing-list-item">Max. print width: 1.8m</li>
+									<li class="pricing-list-item">Print media - Media: vinyl, PP, banner </li>
+									<li class="pricing-list-item">Print media - Outter roller dia.: Max 210mm</li>
+									<li class="pricing-list-item">Print media - roller weigth: Max 40kg</li>
+									<li class="pricing-list-item">Feeding / take up system:  Double power automatic taking up system / damping feeding device. </li>
+									<li class="pricing-list-item">Ink color: (K、C、M、Y) 	</li>
+									<li class="pricing-list-item">Ink type: New Toshiba environmental eco-solvent ink	</li>
+									<li class="pricing-list-item">RIP software: UnitedFancy (GMG) / Photoprint (optional)</li>
+									<li class="pricing-list-item">Data transmission interface: USB3.0</li>
+									<li class="pricing-list-item">Power - Machine: 2000W</li>
+									<li class="pricing-list-item">Power - Infrared drying system: 0-1500W adjustable</li>
+									<li class="pricing-list-item">Power - water circulation system: 240-800W</li>
+									<li class="pricing-list-item">Machine weight: 400KG</li>
+									<li class="pricing-list-item">Machine Size: 3372mm*854mm*1300mm	</li>
+									<li class="pricing-list-item diff">packing - one piece packing  : 3500mm*920mm*1430mm∕650kg</li>
+									<li class="pricing-list-item">Computer configuration - Operation System : Windows7∕8∕10(64bit)</li>
+									<li class="pricing-list-item">Computer configuration - CPU : i5 or more</li>
+									<li class="pricing-list-item">Computer configuration - Graphics card : independent 2GB</li>
+									<li class="pricing-list-item">Computer configuration - Memory : 8G</li>
+									<li class="pricing-list-item">Computer configuration - Hard disk : 1TB</li>
+									<li class="pricing-list-item">Computer configuration - USB : USB3.0</li>
+									<li class="pricing-list-item">Power Requirement : 220VAC(±10%) Single Phase，50∕60Hz</li>
+									<li class="pricing-list-item">Print environment: Temperature：20℃～30℃    Relative humidity: 40-60％</li>
+								</ul>
+							</div>
+							<!-- End Pricing -->
+						</div>
+						<div class="col-sm-6">
+							<!-- Pricing -->
+							<div class="pricing">
+								<div class="margin-b-30">
+									<h3>ALHC-1800ECO - 300*1800dpi</h3>
+								</div>
+								<ul class="list-unstyled pricing-list margin-b-50">
+									<li class="pricing-list-item">Print Head: Industrial Toshiba CE4M</li>
+									<li class="pricing-list-item">Number of print heads: 8pcs</li>
+									<li class="pricing-list-item diff">Resolution: 300*1800dpi</li>
+									<li class="pricing-list-item">Print mode: Bi-direction</li>
+									<li class="pricing-list-item diff">Speed: 6pass - 43㎡/h</li>
+									<li class="pricing-list-item">Max. print width: 1.8m</li>
+									<li class="pricing-list-item">Print media - Media: vinyl, PP, banner </li>
+									<li class="pricing-list-item">Print media - Outter roller dia.: Max 210mm</li>
+									<li class="pricing-list-item">Print media - roller weigth: Max 40kg</li>
+									<li class="pricing-list-item">Feeding / take up system:  Double power automatic taking up system / damping feeding device. </li>
+									<li class="pricing-list-item">Ink color: (K、C、M、Y) 	</li>
+									<li class="pricing-list-item">Ink type: New Toshiba environmental eco-solvent ink	</li>
+									<li class="pricing-list-item">RIP software: UnitedFancy (GMG) / Photoprint (optional)</li>
+									<li class="pricing-list-item">Data transmission interface: USB3.0</li>
+									<li class="pricing-list-item">Power - Machine: 2000W</li>
+									<li class="pricing-list-item">Power - Infrared drying system: 0-1500W adjustable</li>
+									<li class="pricing-list-item">Power - water circulation system: 240-800W</li>
+									<li class="pricing-list-item">Machine weight: 400KG</li>
+									<li class="pricing-list-item">Machine Size: 3372mm*854mm*1300mm	</li>
+									<li class="pricing-list-item diff">packing - 2pcs packing : 3540mm*1120mm*740mm∕600kg</li>
+									<li class="pricing-list-item">Computer configuration - Operation System : Windows7∕8∕10(64bit)</li>
+									<li class="pricing-list-item">Computer configuration - CPU : i5 or more</li>
+									<li class="pricing-list-item">Computer configuration - Graphics card : independent 2GB</li>
+									<li class="pricing-list-item">Computer configuration - Memory : 8G</li>
+									<li class="pricing-list-item">Computer configuration - Hard disk : 1TB</li>
+									<li class="pricing-list-item">Computer configuration - USB : USB3.0</li>
+									<li class="pricing-list-item">Power Requirement : 220VAC(±10%) Single Phase，50∕60Hz</li>
+									<li class="pricing-list-item">Print environment: Temperature：20℃～30℃    Relative humidity: 40-60％</li>
+								</ul>
+							</div>
+							<!-- End Pricing -->
+						</div>
+					</div>
+					<!--// end row -->
+				</div>
+			</div>
+			<!-- End Pricing -->
+
+			<!-- Promo Section -->
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6 text_left">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>1.Toshiba CE4 print heads</h2>
+									<p>Equipped with Toshiba CE4 print heads, featuring 8 levels grey scale, mini 5pl ink drop size, with a high resolution. 300 billion accuration s’ per nozzles.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6"  style="float: right">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/1.jpg" alt="Content Image">
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/2.jpg" alt="Content Image">
+				</div>
+				<div class="col-sm-12 col-md-6 text_right">
+						<div class="clearfix">
+							<div class="ver-center">
+								<div class="ver-center-aligned">
+									<div class="promo-section-col">
+										<h2>2.Print heads with water heating system</h2>
+										<p>Print heads with water heating system, to keep constant temperature for the heads.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6 text_left">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>3.Up and down moisture print heads system</h2>
+									<p>Up and down moisture print heads system, more convenient and reliable for moistening the print heads.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6"  style="float: right">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/3.jpg" alt="Content Image">
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/4.jpg" alt="Content Image">
+				</div>
+				<div class="col-sm-12 col-md-6 text_right">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>4.Movable lamps</h2>
+									<p>Movable lamps, for easily check print heads condition and clean the heads.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6 text_left">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>5.Infrared heating system</h2>
+									<p>Infrared heating system, when printer printing, the heating system working, when printer stop, the heating system also stop.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6"  style="float: right">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/5.jpg" alt="Content Image">
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/6.jpg" alt="Content Image">
+				</div>
+				<div class="col-sm-12 col-md-6 text_right">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>6.Separate ink purging system</h2>
+									<p>Separate ink purging system, using solenoid valve system. When purging single color, other colors will be not interfered.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6 text_left">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>7.Carriage with fan absorbing system</h2>
+									<p>Carriage with fan absorbing system, absorbing the wasted ink, make sure the print quality.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6"  style="float: right">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/7.jpg" alt="Content Image">
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/8.jpg" alt="Content Image">
+				</div>
+				<div class="col-sm-12 col-md-6 text_right">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>8.4pcs gradienter on the machine feet</h2>
+									<p>4pcs gradienter on the machine feet, to adjust the flatness of the machine, get the better printing quality.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-space-1" style="position: relative">
+				<div class="col-sm-12 col-md-6 text_left">
+					<div class="clearfix">
+						<div class="ver-center">
+							<div class="ver-center-aligned">
+								<div class="promo-section-col">
+									<h2>9. Double power</h2>
+									<p>Double power automatic taking up system / damping feeding device.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6"  style="float: right">
+					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/9.jpg" alt="Content Image">
+				</div>
+			</div>
+			<!-- End Promo Section -->
+		<!--========== END PAGE LAYOUT ==========-->
+
+		<!--========== FOOTER ==========-->
+		<footer class="footer">
+			<!-- Copyright -->
+			<div class="content container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<span style="color: #fff;font-size: 13px">HOME</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">PRODUCTS</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">APPLICATION</span> 
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">TECHNICAL</span>
+						<span style="color: #fff;font-size: 13px;margin-left: 60px">ABOUT</span>
+					</div>
+					<div class="col-xs-12 text-center" style="margin-top: 60px">
+						<img src="img/twitter.png" alt="">
+						<img src="img/Facebook.png" alt="" style="margin-left: 60px;">
+						<img src="img/youtube.png" alt="" style="margin-left: 60px">
+						<img src="img/Instagram.png" alt="" style="margin-left: 60px">
+					</div>
+				</div>
+				<!--// end row -->
+			</div>
+
+			<div class="text-center" style="color: #fff;font-size: 18px;border-top: 2px solid #fff;padding-top: 30px;padding-bottom: 30px">
+					© ALHC, Inc. All rights reserved.
+			</div>
+			<!-- End Copyright -->
+		</footer>
+		<!--========== END FOOTER ==========-->
+
+		<!-- Back To Top -->
+		<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+		<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+		<!-- CORE PLUGINS -->
+		<script src="vendor/jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- PAGE LEVEL PLUGINS -->
+		<script src="vendor/jquery.easing.js" type="text/javascript"></script>
+		<script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+		<script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+		<script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+		<script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+		<script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+		<script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<script src="js/layout.min.js" type="text/javascript"></script>
+		<script src="js/components/wow.min.js" type="text/javascript"></script>
+		<script src="js/components/swiper.min.js" type="text/javascript"></script>
+		<script src="js/components/masonry.min.js" type="text/javascript"></script>
+
+		<script>
+			$(".logo-wrap img:eq(0)").css("display", "none");
+			$(".logo-wrap img:eq(1)").css("display", "inline-block");
+			
+			$(".drop_down").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
+				}   
+			});
+			$(".drop_down li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue");
+				}   
+			});
+
+			// floor
+			$(window).scroll(function () {
+				if ($(window).width()<=767) {
+					return 666;
+				}
+				if ($(window).scrollTop()<1100) {
+					$(".sidebar").css("display", "none");
+					$(".sidebar li").removeClass("blue");
+				}
+				if ($(window).scrollTop()>1100) {
+					$(".sidebar").css("display", "block");
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(0)").addClass("blue")
+				}
+				if ($(window).scrollTop()>1670) {
+					$(".sidebar ul li").removeClass("blue");
+					$(".sidebar ul li:eq(1)").addClass("blue")
+				}
+			});
+			
+			// width
+			function widthChange() {
+				if ($("body").width()<970) {
+					$(".text_left").removeClass("text_left1");
+					$(".text_left").addClass("text_left2");
+
+					$(".text_right").removeClass("text_right1");
+					$(".text_right").addClass("text_right2");
+
+					$(".drop_down").css("display", "none");
+					$("#carousel-example-generic").css("margin-top", "127px");
+					$(".carousel-title").next().css("display", "none");
+					$("a.text-uppercase").css("display", "none");
+				} else {
+					$(".text_left").removeClass("text_left2");
+					$(".text_left").addClass("text_left1");
+
+					$(".text_right").removeClass("text_right2");
+					$(".text_right").addClass("text_right1");
+
+					$("#carousel-example-generic").css("margin-top", "0px");
+					$(".carousel-title").next().css("display", "initial");
+					$("a.text-uppercase").css("display", "initial");
+					// mouse
+					$(".sidebar li").on({  
+						mouseover : function(){  
+							$(this).addClass("blue");
+							$(".mouse").css("display", "block");
+						} ,  
+						mouseout : function(){  
+							$(this).removeClass("blue"); 
+							$(".mouse").css("display", "none");
+						}   
+					});
+					$("a.active").on({
+						mouseover : function(){  
+							$(".drop_down").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down").css("display","none")
+						}   
+					});
+				}	
+			}
+
+			widthChange();
+			if ($("body").width()>=970) {
+				$(".drop_down").css("display", "none");
+			}
+			window.onresize = function(){
+				widthChange()			
+			};
+		</script>
+	</body>
+	<!-- END BODY -->
+</html>
