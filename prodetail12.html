@@ -41,14 +41,14 @@
 					left: 52.1%;
 				}
 			}
-			li a {
+			.sidebar li a {
 				width: 80px;
 				margin: 0 auto;
 				list-style: none;
 				text-align: center;
 				font-size: 26px;
 			}
-			a:hover {
+			.sidebar a:hover {
 				color: #14d2eb
 			}
 			.pricing .diff:before {
@@ -820,6 +820,10 @@
 					$(".mouse").css("display", "none");
 				}   
 			});
+
+			if ($(window).scrollTop() !== 0) {
+				window.scrollTo(0,$(window).scrollTop()-180);
+			}
 
 			$(".logo-wrap img:eq(0)").css("display", "none");
 			$(".logo-wrap img:eq(1)").css("display", "inline-block");

@@ -64,6 +64,9 @@
 			.blue{
 				color: #14d2eb!important
 			}
+			html,body {
+				height: auto;
+			}
 		</style>
 	</head>
 	<!-- END HEAD -->
@@ -424,7 +427,19 @@
 		<script src="js/components/masonry.min.js" type="text/javascript"></script>
 
 		<script>
-			// 下来菜单
+			function getScrollTop() {  
+	　　　　　　var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;  
+	　　　　　　return scrollTop;  
+	　　　　}  
+			console.log(getScrollTop());
+			console.log($(window).scrollTop())
+			
+			if ($(window).scrollTop() !== 0) {
+				window.scrollTo(0,$(document).scrollTop()-600);
+			}
+			
+			console.log($(window).scrollTop())
+			// 下来菜单;
 			$(".drop_down").on({  
 				mouseover : function(){  
 					$(this).css("display","block")

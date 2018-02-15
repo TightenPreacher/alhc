@@ -41,6 +41,16 @@
 					left: 52.1%;
 				}
 			}
+			.sidebar li a {
+				width: 80px;
+				margin: 0 auto;
+				list-style: none;
+				text-align: center;
+				font-size: 26px;
+			}
+			.sidebar a:hover {
+				color: #14d2eb
+			}
 			.pricing .diff:before {
 				background: #eb1414;
 			}
@@ -207,18 +217,18 @@
 
 		<!-- Sidebar -->
 		<div class="sidebar">
-			<li class="li mouse">Machine Frame</li>
-			<ul>
-				<li class="li">T</li>
-				<li class="li">P</li>
-				<li class="li">U</li>
-				<li class="li">M</li>
-				<li class="li">I</li>
-				<li class="li">S</li>
-				<li class="li">C</li>
-				<li class="li">4</li>
-				<li class="li">D</li>
-				<li>T</li>
+			<li class="li mouse"><a href="#"></a></li>
+			<ul style="margin: 0">
+				<li class="li" data-fl="f1">T</li>
+				<li class="li" data-fl="f2">P</li>
+				<li class="li" data-fl="f3">U</li>
+				<li class="li" data-fl="f4">M</li>
+				<li class="li" data-fl="f5">I</li>
+				<li class="li" data-fl="f6">S</li>
+				<li class="li" data-fl="f7">C</li>
+				<li class="li" data-fl="f8">4</li>
+				<li class="li" data-fl="f9">D</li>
+				<li data-fl="f10">T</li>
 			</ul>
 		</div>
 		<!-- End Sidebar -->
@@ -324,7 +334,7 @@
 			<!-- End Pricing -->
 
 			<!-- Promo Section -->
-			<div class="row row-space-1" style="position: relative">
+			<div name="f1" id="f1" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6 text_left">
 					<div class="clearfix">
 						<div class="ver-center">
@@ -342,7 +352,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f2" id="f2" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6">
 					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/2.jpg" alt="Content Image">
 				</div>
@@ -360,7 +370,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f3" id="f3" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6 text_left">
 					<div class="clearfix">
 						<div class="ver-center">
@@ -378,7 +388,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f4" id="f4" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6">
 					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/4.jpg" alt="Content Image">
 				</div>
@@ -396,7 +406,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f5" id="f5" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6 text_left">
 					<div class="clearfix">
 						<div class="ver-center">
@@ -414,7 +424,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f6" id="f6" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6">
 					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/6.jpg" alt="Content Image">
 				</div>
@@ -432,7 +442,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f7" id="f7" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6 text_left">
 					<div class="clearfix">
 						<div class="ver-center">
@@ -450,7 +460,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f8" id="f8" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6">
 					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/8.jpg" alt="Content Image">
 				</div>
@@ -468,7 +478,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f9" id="f9" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6 text_left">
 					<div class="clearfix">
 						<div class="ver-center">
@@ -486,7 +496,7 @@
 				</div>
 			</div>
 
-			<div class="row row-space-1" style="position: relative">
+			<div name="f10" id="f10" class="row row-space-1" style="position: relative">
 				<div class="col-sm-12 col-md-6">
 					<img class="img-responsive img_right" style="padding: 50px 0" src="img/950x400/ALHC-1800 ECO 3200 ECO/10.jpg" alt="Content Image">
 				</div>
@@ -632,16 +642,6 @@
 					$(".carousel-title").next().css("display", "initial");
 					$("a.text-uppercase").css("display", "initial");
 					// mouse
-					$(".sidebar li").on({  
-						mouseover : function(){  
-							$(this).addClass("blue");
-							$(".mouse").css("display", "block");
-						} ,  
-						mouseout : function(){  
-							$(this).removeClass("blue"); 
-							$(".mouse").css("display", "none");
-						}   
-					});
 					$("a.active").on({
 						mouseover : function(){  
 							$(".drop_down").css("display","block")
@@ -651,6 +651,63 @@
 						}   
 					});
 				}	
+			}
+
+			$(".sidebar li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+					if ($(this).attr("data-fl") === "f1") {
+						$(".mouse").children("a").text("Toshiba CE4 print heads");
+						$(".mouse").css("top", "0");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f1");
+					} else if ($(this).attr("data-fl") === "f2") {
+						$(".mouse").children("a").text("Print heads with water heating system");
+						$(".mouse").css("top", "39px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f2");
+					} else if ($(this).attr("data-fl") === "f3") {
+						$(".mouse").children("a").text("Up and down moisture print heads system");
+						$(".mouse").css("top", "76px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f3");
+					} else if ($(this).attr("data-fl") === "f4") {
+						$(".mouse").children("a").text("Movable lamps");
+						$(".mouse").css("top", "115px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f4");
+					} else if ($(this).attr("data-fl") === "f5") {
+						$(".mouse").children("a").text("Infrared heating system");
+						$(".mouse").css("top", "154px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f5");
+					} else if ($(this).attr("data-fl") === "f6") {
+						$(".mouse").children("a").text("Separate ink purging system");
+						$(".mouse").css("top", "193px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f6");
+					} else if ($(this).attr("data-fl") === "f7") {
+						$(".mouse").children("a").text("Carriage with fan absorbing system");
+						$(".mouse").css("top", "232px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f7");
+					} else if ($(this).attr("data-fl") === "f8") {
+						$(".mouse").children("a").text("4pcs gradienter on the machine feet");
+						$(".mouse").css("top", "271px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f8");
+					} else if ($(this).attr("data-fl") === "f9") {
+						$(".mouse").children("a").text("Double power");
+						$(".mouse").css("top", "310px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f9");
+					} else if ($(this).attr("data-fl") === "f10") {
+						$(".mouse").children("a").text("Anti-collision system");
+						$(".mouse").css("top", "349px");
+						$(".mouse").children("a").attr("href", "./prodetail14.html#f10");
+					}
+					
+					$(".mouse").css("display", "block");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue"); 
+					$(".mouse").css("display", "none");
+				}   
+			});
+
+			if ($(window).scrollTop() !== 0) {
+				window.scrollTo(0,$(window).scrollTop()-180);
 			}
 
 			$(".logo-wrap img:eq(0)").css("display", "none");
