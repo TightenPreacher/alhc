@@ -319,6 +319,14 @@
 			$(".logo-wrap img:eq(1)").css("display", "inline-block");
 			
 			// mouse
+			$(".drop_down").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
+				}   
+			});
 			$(".drop_down li").on({  
 				mouseover : function(){  
 					$(this).addClass("blue");
