@@ -139,7 +139,7 @@
 				transition-property: all;
 				transition-timing-function: cubic-bezier(.7,1,.7,1);
 			}
-			.drop_down{
+			.drop_down,.drop_down_application{
 				position: absolute;
 				background: #fff;
 				list-style:none;
@@ -151,10 +151,10 @@
 				line-height: 40px;
 				display: none;
 			}
-			.drop_down li {
+			.drop_down li,.drop_down_application li {
 				font-size: 13px;
 			}
-			.drop_down .li {
+			.drop_down .li,.drop_down_application .li {
 				border-bottom: 1px solid #b4b4b4;
 			}
 			
@@ -202,7 +202,14 @@
 										<a href="./products.html#f5"><li>Digital printers ink</li></a>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a>
+									<ul class="drop_down_application">
+										<a href="./application.html#f1"><li class="li">Advertisement_indoor & outdoor</li></a>
+										<a href="./application.html#f2"><li class="li">Decoration industry</li></a>
+										<a href="./application.html#f3"><li class="li" style="line-height: 27px;padding: 5px 0;">Glass / MDF / Leather printing</li></a>
+										<a href="./application.html#f4"><li>Signs & Logos industry</li></a>
+									</ul>
+								</li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="support.html">SUPPORT</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
 							</ul>
@@ -636,6 +643,14 @@
 							$(".drop_down").css("display","none")
 						}   
 					});
+					$("a.active").parent().next().children().on({
+						mouseover : function(){  
+							$(".drop_down_application").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down_application").css("display","none")
+						}   
+					});
 				}	
 			}
 
@@ -703,6 +718,23 @@
 				}   
 			});
 			$(".drop_down li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue");
+				}   
+			});
+
+			$(".drop_down_application").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
+				}   
+			});
+			$(".drop_down_application li").on({  
 				mouseover : function(){  
 					$(this).addClass("blue");
 				} ,  

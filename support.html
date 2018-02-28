@@ -75,7 +75,7 @@
 				text-align: center;
 				font-weight: 600
 			}
-			.drop_down{
+			.drop_down,.drop_down_application {
 				position: absolute;
 				list-style:none;
 				padding: 0 20px;
@@ -86,11 +86,11 @@
 				line-height: 40px;
 				display: none;
 			}
-			.drop_down li {
+			.drop_down li ,.drop_down_application li {
 				color: #fff;
 				font-size: 13px;
 			}
-			.drop_down .li{
+			.drop_down .li,.drop_down_application .li{
 				border-bottom: 1px solid #b4b4b4;
 			}
 			.blue{
@@ -140,7 +140,14 @@
 										<a href="./products.html#f5"><li>Digital printers ink</li></a>
 									</ul>
 								</li>
-								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a></li>
+								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="application.html">APPLICATION</a>
+									<ul class="drop_down_application">
+										<a href="./application.html#f1"><li class="li">Advertisement_indoor & outdoor</li></a>
+										<a href="./application.html#f2"><li class="li">Decoration industry</li></a>
+										<a href="./application.html#f3"><li class="li" style="line-height: 27px;padding: 5px 0;">Glass / MDF / Leather printing</li></a>
+										<a href="./application.html#f4"><li>Signs & Logos industry</li></a>
+									</ul>
+								</li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover active" href="support.html">SUPPORT</a></li>
 								<li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">ABOUT US</a></li>
 							</ul>
@@ -506,8 +513,24 @@
 					$(this).css("display","none")
 				}   
 			});
-
 			$(".drop_down li").on({  
+				mouseover : function(){  
+					$(this).addClass("blue");
+				} ,  
+				mouseout : function(){  
+					$(this).removeClass("blue");
+				}   
+			});
+
+			$(".drop_down_application").on({  
+				mouseover : function(){  
+					$(this).css("display","block")
+				} ,  
+				mouseout : function(){  
+					$(this).css("display","none")
+				}   
+			});
+			$(".drop_down_application li").on({  
 				mouseover : function(){  
 					$(this).addClass("blue");
 				} ,  
@@ -519,12 +542,16 @@
 			$(window).scroll(function () { 
 				if ($(window).scrollTop()>0) {
 					$(".drop_down").css("background", "#fff");
+					$(".drop_down_application").css("background", "#fff");
 					$(".li").css("color", "#b4b4b4");
 					$(".drop_down li:last").css("color", "#b4b4b4");
+					$(".drop_down_application li:last").css("color", "#b4b4b4");
 				} else if ($(window).scrollTop()<=0) {
 					$(".drop_down").css("background", "none");
+					$(".drop_down_application").css("background", "none");
 					$(".li").css("color", "#fff");
 					$(".drop_down li:last").css("color", "#fff");
+					$(".drop_down_application li:last").css("color", "#fff");
 				}
 			});
 
@@ -563,12 +590,20 @@
 							$(".mouse").css("display", "none");
 						}   
 					});
-					$("a.active").parent().prev().prev().prev().children().on({
+					$("a.active").parent().prev().prev().children().on({
 						mouseover : function(){  
 							$(".drop_down").css("display","block")
 						} ,  
 						mouseout : function(){  
 							$(".drop_down").css("display","none")
+						}   
+					});
+					$("a.active").parent().prev().children().on({
+						mouseover : function(){  
+							$(".drop_down_application").css("display","block")
+						} ,  
+						mouseout : function(){  
+							$(".drop_down_application").css("display","none")
 						}   
 					});
 				}	
